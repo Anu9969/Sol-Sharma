@@ -62,6 +62,11 @@
 					{
 						"components": [
 							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
 								"internalType": "address",
 								"name": "author",
 								"type": "address"
@@ -108,6 +113,11 @@
 					{
 						"components": [
 							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
 								"internalType": "address",
 								"name": "author",
 								"type": "address"
@@ -134,6 +144,24 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "likeTweet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -165,6 +193,11 @@
 				"name": "tweets",
 				"outputs": [
 					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
 						"internalType": "address",
 						"name": "author",
 						"type": "address"
@@ -187,6 +220,24 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "unlikeTweet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -202,7 +253,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"My Journey/Twitter.sol": "Twitter"
+			"My Journey/Events.sol": "Twitter"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -216,12 +267,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"My Journey/Twitter.sol": {
-			"keccak256": "0x1df2d1b91d36c8f38f0465ba6018cfe5203d9f16a9a3739c49d01ab08e9ee8ce",
+		"My Journey/Events.sol": {
+			"keccak256": "0x00e8d3616b9d23a18eaeb5dd01dbe38729bca2bfd649dddfe53eeb0e02b8d56f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c290df2d6e6100689ca6dc60ea6d8aff50edb520e8b80288d284c96de0526e2f",
-				"dweb:/ipfs/QmQAqVUP5uGERqdBorN92cfi9zbkDNsphVEUpFiKC2mg5C"
+				"bzz-raw://9ac3179a1b767e37482eb10bff08873aa2e00aa01a24aa1f0b232ee5ec5774bd",
+				"dweb:/ipfs/QmYz3SbGySSGi6sKQa2ct3P1QuMkFhcDZ3yz8gZqqLCbSJ"
 			]
 		}
 	},
